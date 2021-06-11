@@ -51,7 +51,7 @@ footer {
             font-weight: 600;
             max-width: 43ch;
         }
-        div {
+        form {
             display: flex;
             > div {
                 position: relative;
@@ -97,7 +97,7 @@ footer {
 
 @media screen and (max-width: 900px) {
     .foot__container__submit {
-        & > div {
+        & > form {
             width: max-content;
             flex-direction: column;
             button {

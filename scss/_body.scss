@@ -1,6 +1,6 @@
 main {
     width: 100%;
-    h2 {
+    h3 {
         margin: 100px 0 25px 0;
         font-family: "Poppins", sans-serif;
         color: $Very_Dark_Cyan;
@@ -70,7 +70,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    h1 {
+    h2 {
         text-align: center;
         color: $Very_Dark_Cyan;
         font-family: "Poppins", sans-serif;
@@ -99,7 +99,7 @@ main {
         width: 80%;
     }
     main {
-        h2 {
+        h3 {
             text-align: center;
         }
         p {
@@ -153,7 +153,7 @@ main {
 
 @media screen and (max-width: 700px) {
     .end_body {
-        h1 {
+        h2 {
             line-height: 1.3;
             font-size: 1.5em;
             font-weight: 700;
@@ -170,7 +170,7 @@ main {
 
 @media screen and (max-width: 480px) {
     main {
-        h2 {
+        h3 {
             margin: 100px 0 15px 0;
             font-size: 1.5em;
         }
