@@ -1,0 +1,11 @@
+$Pink: rgb(255, 82, 191);
+$Light_Pink: rgb(255, 143, 216);
+$Light_Red: rgb(255, 66, 66);
+
+$Very_Dark_Cyan: rgb(0, 37, 46);
+$Very_Pale_Blue: #f5faff;
+
+
+@mixin dropShadow {
+    box-shadow: rgba(0, 37, 46, 0.1) 0px 4px 4px 1px;
+}

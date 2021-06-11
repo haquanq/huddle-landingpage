@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap'); // 700
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');  // 400 600 700
+@import './variable';
+@import './header';
+@import './body';
+@import './footer';
+
+
+* {
+    box-sizing: border-box;
+    padding: 0; margin: 0;
+    text-decoration: none;
+    *:focus {
+        outline: none;
+    }
+}
+
+.curve_desktop {
+    width: 100%;
+}
+
+.curve_mobile {
+    display: none;
+    width: 100%;
+}
+.curve_mobile.top,
+.curve_desktop.top {
+    margin-bottom: -5px;
+}
+
+
+@media screen and (max-width: 650px) {
+    .curve_desktop {
+        display: none;
+    }
+    
+    .curve_mobile {
+        display: initial;
+    }   
+}
+
+@media (hover:hover) {
+    .head__container__nav {
+        & > button:hover {
+            color: $Light_Pink;
+            border: 1px solid $Light_Pink;
+        }
+    }
+    .head__container__section {
+        & > button:hover {
+            background: $Light_Pink;
+        }
+    }
+    .end_body {
+        & > button:hover {
+            background: $Light_Pink;
+        }
+    }
+    .foot__container__submit {
+        & > div {
+            & > button:hover {
+                background: $Light_Pink;
+            }
+        }
+    }
+}

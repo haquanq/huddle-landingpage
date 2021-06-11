@@ -1,0 +1,183 @@
+main {
+    width: 100%;
+    h2 {
+        margin: 100px 0 25px 0;
+        font-family: "Poppins", sans-serif;
+        color: $Very_Dark_Cyan;
+        font-size: 2.25em;
+        line-height: 1.2;
+    }
+    p {
+        font-family: "open sans", sans-serif;
+        font-size: 1em;
+        font-weight: 600;
+        color: $Very_Dark_Cyan;
+        max-width: 60ch;
+    }
+}
+
+.body_container_1 {
+    width: 100%;
+    & > section {
+        padding: 50px 0;
+        width: 100%;
+        background: $Very_Pale_Blue;
+        display: flex;
+        justify-content: center;
+        & > div {
+            max-width: 1140px; min-width: 325px;
+            width: 90%;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            & > div:first-child {
+                margin-left: 50px;
+            }
+        }
+    }
+}
+
+.body_container_middle {
+    margin: 80px 0;
+    width: 100%;
+    & > section {
+        padding: 50px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        & > div {
+            max-width: 1140px; min-width: 325px;
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            & > div:first-child {
+                margin-right: 50px;
+            }
+        }
+    }
+}
+
+.illustration {
+    max-height: 370px;
+    object-fit: cover;
+}
+
+.end_body {
+    padding: 100px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+        text-align: center;
+        color: $Very_Dark_Cyan;
+        font-family: "Poppins", sans-serif;
+        font-size: 2.25em;
+    }
+    button {
+        margin: 35px 0;
+        font-family: "open sans", sans-serif;
+        font-size: 0.9375em;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        width: 330px; height: 65px;
+        border-radius: 50px;
+        border: none;
+        background: $Pink;
+        color: $Very_Pale_Blue;
+        cursor: pointer;
+        transition: 200ms ease;
+        @include dropShadow;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .illustration {
+        max-height: initial;
+        width: 80%;
+    }
+    main {
+        h2 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+    }
+    .body_container_1 {
+        width: 100%;
+        & > section {
+            padding: 80px 0;
+            & > div {
+                flex-direction: column;
+                justify-content: initial;
+                align-items: center;
+                & > div:first-child {
+                    display: flex;
+                    justify-content: center;
+                    margin: 0;
+                }
+                & > div:last-child {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+            }
+        }
+    }
+    .body_container_middle {
+        & > section {
+            padding: 80px 0;
+            & > div {
+                flex-direction: column;
+                justify-content: initial;
+                align-items: center;
+                & > div:first-child {
+                    display: flex;
+                    justify-content: center;
+                    margin: 0;
+                }
+                & > div:last-child {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .end_body {
+        h1 {
+            line-height: 1.3;
+            font-size: 1.5em;
+            font-weight: 700;
+            width: 20ch;
+        }
+        button {
+            font-size: 0.875em;
+            font-weight: 700;
+            width: 250px; height: 55px;
+            @include dropShadow;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        h2 {
+            margin: 100px 0 15px 0;
+            font-size: 1.5em;
+        }
+        p {
+            width: 90%;
+            font-size: 0.9375em;
+            max-width: initial;
+        }
+    }
+}
